@@ -1,0 +1,10 @@
+service: <yourServiceName>
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  
+
+functions:
+  chatbot:
+    handler: handler.handler
