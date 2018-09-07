@@ -97,7 +97,7 @@ function greetUser(intent_request, callback){
     
     
 function selectGreeting(user_name){
-    var options = [`Hi there ${user_name}, nice to meet you!`, `Hello ${user_name}, I hope you've enjoyed this lab session today!`, `Hey ${user_name}, hope you've had a good day!`];
+    var options = [`Hi there ${user_name}, nice to meet you!`, `Hello ${user_name}, how are you today?`, `Hey ${user_name}, hope you've had a good day!`, `Hey there ${user_name} :)`];
     console.log(options[Math.floor(Math.random()*options.length)]);
     return options[Math.floor(Math.random()*options.length)];
 }
@@ -114,7 +114,7 @@ function dispatch(intentRequest, callback) {
     const intentName = intentRequest.currentIntent.name;
 
     // Dispatch to your skill's intent handlers
-    if (intentName === 'GreetUser'){
+    if (intentName === 'Greeting'){
         return greetUser(intentRequest, callback);
     }
     throw new Error(`Intent with name ${intentName} not supported`);
