@@ -26,8 +26,8 @@ We're using NodeJS, which as we said before is built on Javascript which is not 
 
 But to understand things later on then it's useful to understand these basic data types and the differences between them.
 
-- Char
-- Boolean
+- Char : this is just a letter, eg 'a', 'b' or 'c'
+- Boolean : this is a value that 
 - Int
 - Double
 
