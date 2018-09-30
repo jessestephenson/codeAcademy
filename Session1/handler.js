@@ -1,6 +1,18 @@
 'use strict';
 
- // --------------- Functions that control the bot's behavior -----------------------
+// --------------- Lex bot helper functions -----------------------
+function close(sessionAttributes, fulfillmentState, message) {
+    return {
+        sessionAttributes,
+        dialogAction: {
+            type: 'Close',
+            fulfillmentState,
+            message,
+        },
+    };
+}
+
+// --------------- Functions that control the bot's behavior -----------------------
 /**
  * Performs dialog management and fulfillment for greeting user.
  *
