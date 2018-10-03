@@ -1,22 +1,22 @@
-# Code Academy: Session 2 Extended
+# Code Academy: Session 3
 
 > Think Like A Programmer in NodeJS
 
 ## Introduction
-So you've just finished looking at data types, variables and functions in the first part of this session. 
+So you've just finished looking at data types, variables and functions in the first part of this session.
 
-So now we're going to look at logic and loops. 
+So now we're going to look at logic and loops.
 
 We know from previous that we have a boolean value, true or false, this is what we get when we evaluate a condition. It is either true or false.
 
 ## If
 
-This is more of a logic check. 
+This is more of a logic check.
 
-The syntax is: 
+The syntax is:
 ```if (condition) { doSomething(); }```
 
-This means that if the condition evaluates to ```true``` then the code block will execute. 
+This means that if the condition evaluates to ```true``` then the code block will execute.
 If false it'll just move on.
 
 So for example:
@@ -27,12 +27,12 @@ if (number < 5) {
     console.log("The number is smaller than 5");
 }
 
-// Output 
+// Output
 >> The number is smaller than 5
 ```
-but in this example if the ```number``` is larger than 5, nothing will happen. Try this by adding another log statement after the if statement and changing the number. 
+but in this example if the ```number``` is larger than 5, nothing will happen. Try this by adding another log statement after the if statement and changing the number.
 
-Conditions don't just have to be based on numbers, you can evaluate strings, objects and lists. 
+Conditions don't just have to be based on numbers, you can evaluate strings, objects and lists.
 
 ```javascript
 var listOfFruit = ["apple", "orange", "banana"];
@@ -48,7 +48,7 @@ This is a loop, in this instance, based on the condition given.
 The syntax is:
 ```while (condition) { doSomething(); }```
 
-So in this, the code in the {} will execute until the condition is no longer true. 
+So in this, the code in the {} will execute until the condition is no longer true.
 
 ```javascript
 while (true) {
@@ -57,10 +57,12 @@ while (true) {
 ```
 This is called an infinite loop and the statement will be executed unendingly. Try it. I dare you.
 
-## For 
+## For
 
 ```javascript
 for (i = 0; i < 5; i++) {
     console.log("Number is: ", i);
 }
 ```
+
+## Fun Exercise: The Guessing Game
