@@ -41,6 +41,38 @@ if ("apple" in listOfFruit){
 }
 ```
 
+We can also have ```else``` and ```else if``` in there as well so we can check for more than one possible option. For example:
+
+```javascript
+function checkFruit(fruit){
+  if (fruit == "apple"){
+    console.log("Your fruit is an apple");
+  } else if (fruit == "orange") {
+    console.log("Your fruit is an orange");
+  } else if (fruit == "banana") {
+    console.log("Your fruit is a banana");
+  } else {
+    console.log("I don't know what your fruit is.")
+  }
+}
+
+
+// OUTPUT
+> checkFruit("kiwifruit")
+"I don't know what your fruit is."
+
+> checkFruit("banana")
+"Your fruit is a banana"
+```
+
+Try it for yourself. You can do the same with numbers, but the importance is the syntax.
+The condition you're checking should be in brackets ```(condition)``` and you can evaluate whatever you want, provided that the condition results in a boolean value.
+
+```==``` is equal to, ```=``` is an assignment. So ```fruit = "banana"``` is giving fruit a value, but ```fruit == "banana"``` is checking to see if the fruit is banana.
+
+
+You can use ```else``` like a default, so if your value doesn't fit any other known scenarios then you can do the else. Or if you only have one thing you're checking for, then if/else work as a helpful combo. What you use is all dependent on what you need to do.
+
 ## While
 
 This is a loop, in this instance, based on the condition given.
