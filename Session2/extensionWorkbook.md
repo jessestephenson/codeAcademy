@@ -36,7 +36,7 @@ Conditions don't just have to be based on numbers, you can evaluate strings, obj
 
 ```javascript
 var listOfFruit = ["apple", "orange", "banana"];
-if ("apple" in listOfFruit){
+if (fruitList.includes('apple')){
     console.log("Apple is in the list");
 }
 ```
